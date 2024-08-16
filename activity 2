@@ -35,10 +35,13 @@ Cairo_Sw2(config)#ip default-gateway 10.10.20.1
 commands "cairo_sw1"
 
 (1)trunk mode between (Cairo_Sw1 & Cairo_Sw2)
-Cairo_Sw2>ena 
-Cairo_Sw2#config t 
-Cairo_Sw2(config)#int g0/2
-Cairo_Sw2(config-if)#switchport mode trunk
+Cairo_Sw1>ena 
+Cairo_Sw1#config t 
+Cairo_Sw1(config)#int g0/2
+Cairo_Sw1(config-if)#switchport mode trunk
+Cairo_Sw1(config)#int g0/1
+Cairo_Sw1(config-if)#switchport mode trunk
+
 
 (2)
 Cairo_Sw2(config)#vlan 20
