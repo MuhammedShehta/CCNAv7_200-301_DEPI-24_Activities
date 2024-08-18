@@ -44,29 +44,27 @@ Cairo_Sw1(config-if)#switchport mode trunk
 
 
 (2)
-Cairo_Sw2(config)#vlan 20
-Cairo_Sw2(config-vlan)#name pc
-Cairo_Sw2(config-vlan)#vlan 30
-Cairo_Sw2(config-vlan)#name lt
-Cairo_Sw2(config-vlan)#vlan 50
-Cairo_Sw2(config-vlan)#name pr
-Cairo_Sw2(config-vlan)#exit
-Cairo_Sw2(config)#int f0/1
-Cairo_Sw2(config-if)#switchport access vlan 20
-Cairo_Sw2(config-if)#int f0/2
-Cairo_Sw2(config-if)#switchport access vlan 30
+Cairo_Sw1(config)#vlan 20
+Cairo_Sw1(config-vlan)#name pc
+Cairo_Sw1(config-vlan)#vlan 30
+Cairo_Sw1(config-vlan)#name lt
+Cairo_Sw1(config-vlan)#exit
+Cairo_Sw1(config)#int f0/1
+Cairo_Sw1(config-if)#switchport access vlan 20
+Cairo_Sw1(config-if)#int f0/2
+Cairo_Sw1(config-if)#switchport access vlan 30
 
 (3)
-Cairo_Sw2(config)#int vlan 20
-Cairo_Sw2(config-if)#ip address 10.10.20.3 255.255.255.0
-Cairo_Sw2(config)#line vty 0 5
-Cairo_Sw2(config-line)#password 2024
-Cairo_Sw2(config-line)#login
-Cairo_Sw2(config-line)#enable password cisco
+Cairo_Sw1(config)#int vlan 20
+Cairo_Sw1(config-if)#ip address 10.10.20.3 255.255.255.0
+Cairo_Sw1(config)#line vty 0 5
+Cairo_Sw1(config-line)#password 2024
+Cairo_Sw1(config-line)#login
+Cairo_Sw1(config-line)#enable password cisco
 
 (4) default router
-Cairo_Sw2(config-if)#ip default-gateway 10.10.20.1
-Cairo_Sw2(config)#do wr
+Cairo_Sw1(config-if)#ip default-gateway 10.10.20.1
+Cairo_Sw1(config)#do wr
 *******************************************************
 commands "Cairo_R"
 
