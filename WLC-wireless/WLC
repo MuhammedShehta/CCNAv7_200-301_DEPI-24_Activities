@@ -1,0 +1,79 @@
+commands Router "1941"
+Router#ena
+Router#config t
+Router(config)#hostname R1
+R1(config)#line vty 0 5
+R1(config-line)#pass 2024
+R1(config-line)#login
+R1(config-line)#ena pass cisco
+R1(config)#banner motd $
+************************************************ 
+
+        cisco systems 
+
+************************************************
+R1(config)#int g0/0
+R1(config-if)#ip address 192.168.10.1 255.255.255.0
+R1(config-if)#no sh
+R1(config-if)#do wr
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Wireless LAN Controller 
+.Config        >>>> Management >>>> Ipv4 Address    192.168.10.5
+                              >>>> Subnet Mask     255.255.255.0
+                              >>>> Default-Gateway 192.168.10.1 
+                              >>>> DNS server      192.168.10.2
+   
+.Wireless LAN >>>> Name & SSID : S1e
+    >>>> Authentications : WPA2-PSK , PSK PASS PHRASE : AAA@1111
+    >>>> Encryption Type : AES 
+    >>>> Central Control : local switching, central authentication
+    >>>> Save
+
+.DHCP        >>>> Interface >>>> Management >>>> Service on
+             >>>> Pool Name                S1eAddress
+             >>>> Default-Gateway          192.168.10.1
+             >>>> DNS Server               192.168.10.2
+             >>>> start ip address         192.168.10.51
+             >>>> subnet Mask              255.255.255.0
+             >>>> Maximum Number of Users  50
+             >>>> TFTP Server              0.0.0.0
+             >>>> WLC Address              192.168.10.5
+             >>>> Add , Save
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Light Weight Access Point0,1,2 " 3702i "
+. power on
+.Config >>>> Interface >>>> GigabitEthernet0 >>>> DHCP                                          OR
+                                             >>>> Static Ip >>>> Ipv4 Address    192.168.10.11,12,13 
+                                                            >>>> Subnet Mask     255.255.255.0
+.WLC >>>> Primary Controller >>>> 192.168.10.5
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+laptop0 & laptop1" client 1,2 "
+.power off
+.physical >>>> put WPC300N
+.power on 
+.Desktop >>>> pc wireless >>>> Profiles >>> New >>>> S1e 
+                                                >>>> Advanced Setup 
+                                                >>>> Wireless Network Name   S1e
+                                                >>>> NEXT 
+                                                >>>> Security                WPA2-Personal
+                                                >>>> preshared key           AAA@1111   
+                                                >>>> NEXT , SAVE
+                                                >>>> Connnect to Network
+                                                
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+PC0 & PC1 " Cient 3,4 "
+.power off
+.physical >>>> put WMP300N
+.power on 
+.Desktop >>>> pc wireless >>>> Profiles >>> New >>>> S1e 
+                                                >>>> Advanced Setup 
+                                                >>>> Wireless Network Name   S1e
+                                                >>>> NEXT 
+                                                >>>> Security                WPA2-Personal
+                                                >>>> preshared key           AAA@1111   
+                                                >>>> NEXT , SAVE
+                                                >>>> Connnect to Network
+ 
