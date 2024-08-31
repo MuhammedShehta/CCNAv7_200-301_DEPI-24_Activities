@@ -1,0 +1,24 @@
+Router1
+Router>ena
+Router#config t
+Router(config)#int g0/0/0
+Router(config-if)#no sh
+Router(config-if)#ip address 192.168.1.1 255.255.255.0
+Router(config-if)#do wr
+Router(config-if)#standby 5 ip 192.168.1.50
+Router(config-if)#do wr
+
+*****************************************************************
+
+Router0
+Router>ena
+Router#config t
+Router(config)#int g0/0/1
+Router(config-if)#no sh
+Router(config-if)#ip address 192.18.1.2 255.255.255.0
+Router(config-if)#do wr
+Router(config-if)#standby 5 ip 192.168.1.50
+Router(config-if)#do wr
+
+*****************************************************************
+
