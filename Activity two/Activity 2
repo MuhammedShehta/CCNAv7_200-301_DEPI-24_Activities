@@ -7,7 +7,7 @@ Cairo_Sw2(config)#int g0/2
 Cairo_Sw2(config-if)#switchport mode trunk
 
 (2) create VLANs (Cairo_Sw2)
-airo_Sw2(config)#vlan 20
+Cairo_Sw2(config)#vlan 20
 Cairo_Sw2(config-vlan)#name pc
 Cairo_Sw2(config-vlan)#vlan 30
 Cairo_Sw2(config-vlan)#name lt
