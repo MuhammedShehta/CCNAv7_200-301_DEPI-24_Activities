@@ -1,4 +1,4 @@
-ACIVITIES
+Activity1-Static Ip
 ![Activity1-Static Ip-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/2108c9b8-a7d0-4d0e-aeb8-21b70eb0f31e)
 ![ACTIVI~1](https://github.com/user-attachments/assets/cde0b321-d31c-46a2-9141-e7462a6b09c6)
 ![Activity3-DHCPIPV6--Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/96c769d9-1069-4657-b85c-b5e78932664c)
