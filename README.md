@@ -22,6 +22,10 @@
 ## Enhanced Interior Gateway Routing Protocol 
 ![Activity7-EIGRP-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/c6035fdc-7b64-427b-a18b-949a601c9c72)
 
-# **Activity8-OSPF**
+# Activity8-OSPF
 ## Open Shortest Path First
 ![Activity8-OSPF-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/854eaa31-0b52-4006-b9e0-0727c62fcee1)
+
+# Static_NAT
+## Network Access Translation
+![Activity9-Static-NAT-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/37976435-b264-4831-a698-c4c6470dad94)
