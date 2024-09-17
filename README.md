@@ -1,4 +1,4 @@
-**Activity1-Static Ip**
+# **Activity1-Static Ip**
 ![Activity1-Static Ip-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/2108c9b8-a7d0-4d0e-aeb8-21b70eb0f31e)
 
 **Activity2-Basic&Routing_Configuration&Vlan**
