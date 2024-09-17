@@ -15,10 +15,13 @@
 ![Activity5-WLC-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/1abadb62-97a5-4c30-8d28-0d1b635dd9fc)
 
 # **Activity6-RIP**
+## Routing Information Protocol
 ![Activity6-RIP-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/9584b6c3-d815-401a-b2dc-5925a868ef69)
 
-# **Activity7-EIGRP**
+# Activity7-EIGRP
+## Enhanced Interior Gateway Routing Protocol 
 ![Activity7-EIGRP-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/c6035fdc-7b64-427b-a18b-949a601c9c72)
 
 # **Activity8-OSPF**
+## Open Shortest Path First
 ![Activity8-OSPF-Mohamed Shehta Mohamed-1111329267](https://github.com/user-attachments/assets/854eaa31-0b52-4006-b9e0-0727c62fcee1)
